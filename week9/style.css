@@ -1,0 +1,135 @@
+
+
+/* Section 1 */
+.part1 {
+    color: red;
+    background-color: black;
+}
+
+/* Section 2 */
+.part2 {
+    color: green;
+    background-color: darkred;
+}/* Apply styles to the specified sections and create columns with background colors */
+
+/* Section 1 (CSYM019) */
+.csym019 {
+    background-color: lightblue; /* Change the color as desired */
+    padding: 20px; /* Add padding for better visibility */
+    margin: 10px; /* Add margin for separation */
+    float: left; /* Float the section to create columns */
+    width: 45%; /* Set the width of the column */
+}
+
+/* Section 2 (CSYM015) */
+.csym015 {
+    background-color: lightgreen; /* Change the color as desired */
+    padding: 20px; /* Add padding for better visibility */
+    margin: 10px; /* Add margin for separation */
+    float: left; /* Float the section to create columns */
+    width: 45%; /* Set the width of the column */
+}
+
+/* Clear floats to ensure proper layout */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Reset some default browser styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to the page */
+body {
+    font-family: 'Arial', sans-serif; /* Set a font family */
+    background-color: #b74646; /* Set a background color for the entire page */
+    line-height: 1.6; /* Set the line height for better readability */
+}
+
+/* Style the header */
+header {
+    background-color: #512f2f; /* Set a background color for the header */
+    color: #0f0e0e; /* Set the text color for the header */
+    padding: 20px; /* Add padding for better visibility */
+    text-align: center; /* Align text to the center in the header */
+}
+
+/* Style the container to hold columns and sidebars */
+.container {
+    margin: 20px;
+}
+
+/* Style the left sidebar */
+.sidebar-left {
+    width: 20%; /* Set the width of the left sidebar */
+    float: left; /* Float the left sidebar to the left */
+    background-color: #ad1919; /* Set a background color for the left sidebar */
+}
+
+/* Style the columns */
+.column {
+    width: 50%; /* Set the width of each column */
+    margin: 1%; /* Add margin for separation */
+    padding: 20px; /* Add padding for better visibility */
+    border-radius: 10px; /* Add rounded corners */
+    float: left; /* Float the columns to create a grid */
+    background-color: #fff; /* Set a background color for each column */
+}
+
+/* Style the right sidebar */
+.sidebar-right {
+    width: 20%; /* Set the width of the right sidebar */
+    float: left; /* Float the right sidebar to the left */
+    background-color: #ddd; /* Set a background color for the right sidebar */
+}
+
+/* Style the footer */
+footer {
+    clear: both; /* Clear floats to ensure proper layout */
+    background-color: #333; /* Set a background color for the footer */
+    color: #fff; /* Set the text color for the footer */
+    padding: 20px; /* Add padding for better visibility */
+    text-align: center; /* Align text to the center in the footer */
+}
+
+/* Style the links in the sidebars */
+.sidebar-left a,
+.sidebar-right a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    background-color: #bbb; /* Set a background color for the links */
+    margin-bottom: 5px;
+}
+
+/* Hover effect for links */
+.sidebar-left a:hover,
+.sidebar-right a:hover {
+    background-color: #555; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+
+/* Section 3 */
+.part3 p {
+    color: green;
+}
+
+.part3 div p {
+    color: green;
+}
+
+/* Section 4 */
+.part4 p:first-child,
+.part4 p:first-child + p {
+    color: green;
+}
+
+.part4 p:last-child {
+    color: black;
+}
